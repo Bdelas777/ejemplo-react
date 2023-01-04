@@ -4,11 +4,12 @@ import ReactDOM from "react-dom/client";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 function Greeting() {
-  const user = {
-    firstName : 'Pepe',
-    lastName : 'Grillo'
+  function add(x,y){
+    return x + y
   }
-  return <h1>{JSON.stringify()}</h1>
+  return <div>
+    <h1>{add(10,5)}</h1>
+  </div>
 }
 
 root.render(<div>{Greeting()}</div>);

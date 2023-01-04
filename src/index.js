@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { UserCard, Greeting } from "./Greeting";
+import Products from "./Products";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-function Greeting() {
-  function add(x,y){
-    return x + y
-  }
-  return <div>
-    <h1>{add(10,5)}</h1>
+root.render(
+  <div>
+    <Greeting />
+    <UserCard />
+    <Products />
   </div>
-}
-
-root.render(<div>{Greeting()}</div>);
+);

@@ -3,4 +3,9 @@ import ReactDOM  from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<h1>Hello world</h1>)
+function Greeting(){
+    return <h1>Hola mundo</h1>
+}
+root.render(<div>
+    {Greeting()}
+</div>)
